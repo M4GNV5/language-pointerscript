@@ -1,0 +1,15 @@
+{
+  "name": "language-pointerscript",
+  "version": "0.0.0",
+  "description": "Syntax highlighting for PointerScript",
+  "keywords": [
+    "pointerscript",
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/M4GNV5/language-pointerscript",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
