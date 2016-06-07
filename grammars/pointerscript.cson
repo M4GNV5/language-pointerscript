@@ -41,7 +41,7 @@
 	}
 	{
 		'name': 'keyword.operator.ptrs'
-		'match': '\\b(cast|typeof|type)\\b'
+		'match': '\\b(cast|typeof|type|new)\\b'
 	}
 	{
 		'name': 'support.type.ptrs'
@@ -49,7 +49,7 @@
 	}
 	{
 		'name': 'keyword.control.ptrs'
-		'match': '\\b(struct|constructor|function|var|import|if|else|while|do|for|in|try|catch|throw|continue|break|return)\\b'
+		'match': '\\b(struct|constructor|function|var|import|from|if|else|while|do|for|in|try|catch|throw|continue|break|return)\\b'
 	}
 	{
 		'name': 'constant.language.ptrs'
