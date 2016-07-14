@@ -45,7 +45,7 @@
 	}
 	{
 		'name': 'keyword.operator.ptrs'
-		'match': '\\b(cast|typeof|type|new|delete|this)\\b'
+		'match': '\\b(cast|as|typeof|type|new|delete|this|instanceof)\\b'
 	}
 	{
 		'name': 'support.type.ptrs'
