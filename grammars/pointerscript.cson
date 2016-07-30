@@ -53,7 +53,7 @@
 	}
 	{
 		'name': 'keyword.control.ptrs'
-		'match': '\\b(struct|constructor|destructor|operator|delete|function|var|import|from|' +
+		'match': '\\b(struct|constructor|destructor|operator|delete|function|var|const|alias|import|from|' +
 			'if|else|while|do|for|foreach|in|try|catch|throw|continue|break|return)\\b'
 	}
 	{
