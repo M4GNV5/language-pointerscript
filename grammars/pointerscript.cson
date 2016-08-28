@@ -66,6 +66,11 @@
 		'match': '\\b(true|false|null|NULL|VARSIZE|undefined)\\b'
 	}
 	{
+		'name': 'string.quoted.other.ptrs'
+		'begin': '`'
+		'end': '`'
+	}
+	{
 		'name': 'string.quoted.double.ptrs'
 		'begin': '"'
 		'end': '"'
