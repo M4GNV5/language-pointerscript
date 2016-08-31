@@ -57,7 +57,7 @@
 	}
 	{
 		'name': 'keyword.control.ptrs'
-		'match': '\\b(struct|constructor|destructor|operator|get|set|delete|'+
+		'match': '\\b(struct|constructor|destructor|operator|private|get|set|delete|'+
 			'function|var|const|alias|import|from|if|else|switch|case|default|'+
 			'while|do|for|foreach|in|try|catch|throw|continue|break|return)\\b'
 	}
