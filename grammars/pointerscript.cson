@@ -49,7 +49,7 @@
 	}
 	{
 		'name': 'keyword.operator.ptrs'
-		'match': '\\b(cast|as|sizeof|typeof|type|new|yield|this|instanceof)\\b'
+		'match': '\\b(cast|as|sizeof|typeof|type|new|this|instanceof)\\b'
 	}
 	{
 		'name': 'support.type.ptrs'
@@ -58,7 +58,7 @@
 	{
 		'name': 'keyword.control.ptrs'
 		'match': '\\b(struct|constructor|destructor|operator|private|get|set|delete|'+
-			'function|var|const|alias|import|from|if|else|switch|case|default|'+
+			'function|var|const|import|from|if|else|switch|case|default|yield|'+
 			'while|do|for|foreach|in|try|catch|throw|continue|break|return)\\b'
 	}
 	{
