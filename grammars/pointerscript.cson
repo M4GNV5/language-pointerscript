@@ -64,7 +64,11 @@
 	{
 		'begin': 'asm\\s+([a-zA-Z0-9_]+)?(\\s+,\\s+[a-zA-Z0-9_]+)*\\s+\\{'
 		'end': '}'
-		'include': 'source.s'
+		'patterns': [
+			{
+				'include': 'source.s'
+			}
+		]
 	}
 	{
 		'name': 'constant.language.ptrs'
