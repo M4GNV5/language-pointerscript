@@ -49,9 +49,9 @@
 	}
 	{
 		'match': '(?:<|:)\\s*(undefined|int|float|native|pointer|function|struct|' +
-				'char|short|int|long|longlong|i8|i16|i32|i64|' +
-				'uchar|ushort|uint|ulong|ulonglong|u8|u16|u32|u64|' +
-				'single|double|native|pointer|ssize|size|intptr|uintptr|ptrdiff)\\b'
+			'char|short|int|long|longlong|i8|i16|i32|i64|' +
+			'uchar|ushort|uint|ulong|ulonglong|u8|u16|u32|u64|' +
+			'single|double|native|pointer|ssize|size|intptr|uintptr|ptrdiff)\\b'
 		'captures': [
 			{}
 			{
@@ -62,13 +62,14 @@
 	}
 	{
 		'name': 'keyword.operator.ptrs'
-		'match': '\\b(cast|cast_stack|as|sizeof|typeof|type|new|new_stack|map|this|instanceof)\\b'
+		'match': '\\b(cast|cast_stack|as|sizeof|typeof|type|new|new_stack|' +
+			'map|map_stack|this|instanceof)\\b'
 	}
 	{
 		'name': 'keyword.control.ptrs'
-		'match': '\\b(struct|constructor|destructor|operator|private|static|get|set|delete|'+
-			'function|var|const|import|from|if|else|switch|case|default|yield|scoped|'+
-			'while|do|for|foreach|in|try|catch|throw|continue|break|return|asm)\\b'
+		'match': '\\b(struct|constructor|destructor|operator|public|internal|private|static|'+
+			'get|set|delete|function|var|const|import|from|if|else|switch|case|default|'+
+			'yield|scoped|while|do|for|foreach|in|try|catch|throw|continue|break|return|asm)\\b'
 	}
 	{
 		'begin': 'asm\\s+([a-zA-Z0-9_]+)?(\\s+,\\s+[a-zA-Z0-9_]+)*\\s+\\{'
