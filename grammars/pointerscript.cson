@@ -60,6 +60,18 @@
 		]
 	}
 	{
+		'match': '\\b(new|new_stack)\\s+(array)\\b'
+		'captures': [
+			{}
+			{
+				'name': 'keyword.operator.ptrs'
+			}
+			{
+				'name': 'support.type.ptrs'
+			}
+		]
+	}
+	{
 		'name': 'keyword.operator.ptrs'
 		'match': '\\b(cast|cast_stack|as|sizeof|typeof|type|new|new_stack|' +
 			'map|map_stack|this|instanceof)\\b'
