@@ -16,6 +16,23 @@
 			}
 		]
 	},
+	'string_insertions': {
+		'patterns': [
+			{
+				'match': '\\$[a-zA-Z0-9_]+\\b'
+				'name': 'constant.other.placeholder.ptrs'
+			},
+			{
+				'begin': '\\$\\{'
+				'end': '\\}'
+				'patterns': [
+					{
+						'include': 'source.ptrs'
+					}
+				]
+			}
+		]
+	},
 	'comment_open': {
 		'patterns': [
 			{
@@ -77,11 +94,17 @@
 		'name': 'keyword.control.ptrs'
 		'match': '\\b(struct|constructor|destructor|operator|public|internal|private|static|'+
 			'get|set|delete|function|var|const|import|from|if|else|switch|case|default|yield|'+
-			'scoped|while|do|for|foreach|in|try|catch|finally|throw|continue|break|return|asm)\\b'
+			'scoped|while|do|for|foreach|in|try|catch|finally|throw|continue|break|return)\\b'
 	}
 	{
-		'begin': 'asm\\s+([a-zA-Z0-9_]+)?(\\s+,\\s+[a-zA-Z0-9_]+)*\\s+\\{'
-		'end': '}'
+		'begin': '\\b(asm)\\s*\\w*(?:\\s*,\\s*\\w+)*'
+		'beginCaptures': [
+			{}
+			{
+				'name': 'keyword.control.ptrs'
+			}
+		]
+		'end': '\\}'
 		'patterns': [
 			{
 				'include': 'source.s'
@@ -104,6 +127,9 @@
 		'patterns': [
 			{
 				'include': '#string_escaped_char'
+			},
+			{
+				'include': '#string_insertions'
 			}
 		]
 	}
