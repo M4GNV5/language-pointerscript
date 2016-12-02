@@ -23,8 +23,19 @@
 				'name': 'constant.other.placeholder.ptrs'
 			},
 			{
-				'begin': '\\$\\{'
+				'begin': '\\$(%[^{]+)?\\{'
+				'beginCaptures': [
+					{
+						'name': 'constant.other.placeholder.ptrs'
+					}
+				]
 				'end': '\\}'
+				'endCaptures': [
+					{
+						'name': 'constant.other.placeholder.ptrs'
+					}
+				]
+
 				'patterns': [
 					{
 						'include': 'source.ptrs'
@@ -58,6 +69,15 @@
 		'patterns': [
 			{
 				'include': '#comment_open'
+			}
+		]
+	}
+	{
+		'begin': '\\{'
+		'end': '\\}'
+		'patterns': [
+			{
+				'include': 'source.ptrs'
 			}
 		]
 	}
@@ -121,15 +141,29 @@
 		'end': '`'
 	}
 	{
-		'name': 'string.quoted.double.ptrs'
 		'begin': '"'
+		'beginCaptures': [
+			{
+				'name': 'string.quoted.double.ptrs'
+			}
+		]
 		'end': '"'
+		'endCaptures': [
+			{
+				'name': 'string.quoted.double.ptrs'
+			}
+		]
+
 		'patterns': [
 			{
 				'include': '#string_escaped_char'
 			},
 			{
 				'include': '#string_insertions'
+			},
+			{
+				'match': '.'
+				'name': 'string.quoted.double.ptrs'
 			}
 		]
 	}
