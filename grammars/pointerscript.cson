@@ -82,16 +82,11 @@
 		]
 	}
 	{
-		'match': '(?:<|:)\\s*(undefined|int|float|native|pointer|function|struct|' +
+		'match': '\\b(undefined|int|float|native|pointer|function|struct|string|' +
 			'char|short|int|long|longlong|i8|i16|i32|i64|' +
 			'uchar|ushort|uint|ulong|ulonglong|u8|u16|u32|u64|' +
 			'single|double|native|pointer|ssize|size|intptr|uintptr|ptrdiff)\\b'
-		'captures': [
-			{}
-			{
-				'name': 'support.type.ptrs'
-			}
-		]
+		'name': 'support.type.ptrs'
 	}
 	{
 		'match': '\\b(new|new_stack)\\s+(array)\\b'
