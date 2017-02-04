@@ -82,11 +82,19 @@
 		]
 	}
 	{
-		'match': '\\b(undefined|int|float|native|pointer|function|struct|string|' +
+		'match': '(?:<|:|(sizeof\\s*\\(?))\\s*(undefined|int|float|native|pointer|function|struct|string|' +
 			'char|short|int|long|longlong|i8|i16|i32|i64|' +
 			'uchar|ushort|uint|ulong|ulonglong|u8|u16|u32|u64|' +
 			'single|double|native|pointer|ssize|size|intptr|uintptr|ptrdiff)\\b'
-		'name': 'support.type.ptrs'
+		'captures': [
+			{}
+			{
+				'name': 'keyword.operator.ptrs'
+			}
+			{
+				'name': 'support.type.ptrs'
+			}
+		]
 	}
 	{
 		'match': '\\b(new|new_stack)\\s+(array)\\b'
@@ -177,7 +185,7 @@
 		'match': '\\b((0x[0-9a-fA-F]+)|([0-9]+((\\.[0-9]+)|[fF])?))\\b'
 	}
 	{
-		'match': '([a-zA-Z_][a-zA-Z0-9_]*)(!([a-zA-Z]+))?(?=\\s*\\()'
+		'match': '([a-zA-Z_][a-zA-Z0-9_]*)(!([a-zA-Z0-9]+))?(?=\\s*\\()'
 		'captures': [
 			{}
 			{
