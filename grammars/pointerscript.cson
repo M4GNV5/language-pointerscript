@@ -116,8 +116,8 @@
 	{
 		'name': 'keyword.control.ptrs'
 		'match': '\\b(struct|constructor|destructor|operator|public|internal|private|static|'+
-			'get|set|delete|function|var|const|import|from|if|else|switch|case|default|yield|'+
-			'scoped|while|do|for|foreach|in|try|catch|finally|throw|continue|break|return)\\b'
+			'get|set|delete|function|var|const|lazy|ref|import|from|if|else|switch|case|default|'+
+			'yield|scoped|while|do|for|foreach|in|try|catch|finally|throw|continue|break|return)\\b'
 	}
 	{
 		'begin': '\\b(asm)\\s*\\w*(?:\\s*,\\s*\\w+)*'
