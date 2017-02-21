@@ -136,7 +136,7 @@
 	}
 	{
 		'name': 'constant.language.ptrs'
-		'match': '\\b(true|false|null|NULL|VARSIZE|PTRSIZE|undefined|NaN|PI|E)\\b'
+		'match': '\\b(true|false|null|NULL|VARSIZE|PTRSIZE|undefined|NaN|Infinity|PI|E)\\b'
 	}
 	{
 		'name': 'string.quoted.other.ptrs'
